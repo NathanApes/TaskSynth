@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="nathan.apes.tasksynth.ui.addwindow.AddWindow"
+          prefHeight="200.0" prefWidth="400.0"
+        >
+
+        <columnConstraints>
+            <ColumnConstraints minWidth="400"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="40"/>
+        </rowConstraints>
+
+        <background>
+            <Background>
+                <fills><BackgroundFill fill="white"/></fills>
+            </Background>
+        </background>
+
+        <fx:define>
+            <Font name="Trebuchet MS" size="16" fx:id="font"/>
+        </fx:define>
+
+        <fx:define>
+            <Font name="Trebuchet MS" size="20" fx:id="fontBig"/>
+        </fx:define>
+
+        <TextField text="What is the task?" font="$font" id="taskWhat"/>
+
+        <Text
+            GridPane.rowIndex="1"
+            text="-----------------------------------------------"
+            font="$font"
+            translateX="60"
+        />
+
+        <TextField text="Is there a time when the task should run?" font="$font" GridPane.rowIndex="4" id="taskWhen"/>
+
+        <CheckBox id="startup" translateX="120" translateY="5" GridPane.rowIndex="5"/>
+        <Text GridPane.rowIndex="5" translateX="160" translateY="5" text="Run on StartUp?" font="$font"/>
+
+        <Text
+                GridPane.rowIndex="7"
+                text="-----------------------------------------------"
+                font="$font"
+                translateX="60"
+                translateY="5"
+        />
+
+        <Text text="If these fields are filled, we're good to go!" font="$fontBig" translateX="9" translateY="8" GridPane.rowIndex="10"/>
+
+        <Group GridPane.rowIndex="11" translateX="130" translateY="20">
+            <Button text="Add" onAction="#onSubmit"/>
+            <Button text="Cancel" translateX="80" onAction="#onCancel"/>
+        </Group>
+</GridPane>

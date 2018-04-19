@@ -1,0 +1,69 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyEvent?>
+<BorderPane fx:controller="nathan.apes.tasksynth.PrimaryGUI" xmlns:fx="http://javafx.com/fxml" prefHeight="500" prefWidth="800">
+    <background>
+        <Background>
+            <fills><BackgroundFill fill="darkgoldenrod"/></fills>
+        </Background>
+    </background>
+    <top>
+        <ImageView>
+            <Image url="nathan/apes/tasksynth/resources/images/middletopImage.jpg"/>
+        </ImageView>
+    </top>
+    <center>
+        <fx:define>
+            <Font name="Trebuchet MS" size="48" fx:id="font"/>
+        </fx:define>
+        <TextField
+            text="What's the plan?"
+            font="$font"
+            translateX="-50"
+            scaleX="0.7"
+            scaleY="1.5"
+            onKeyPressed="#onEntered"
+        />
+    </center>
+    <bottom>
+        <ImageView>
+            <Image url="nathan/apes/tasksynth/resources/images/middlebottomImage.jpg"/>
+        </ImageView>
+    </bottom>
+    <left>
+        <Group>
+            <Button
+                    text="Create a Task"
+                    scaleX="2"
+                    scaleY="3"
+                    translateX="49"
+                    onAction="#onCreateClick"
+            />
+            <Button
+                    text="Manage Tasks"
+                    scaleX="2"
+                    scaleY="3"
+                    translateX="50"
+                    translateY="220"
+                    onAction="#onManageClick"
+            />
+        </Group>
+    </left>
+    <right>
+        <Button
+                text="Run Task Now"
+                scaleX="2"
+                scaleY="3"
+                translateX="-49"
+                translateY="135"
+                onAction="#onRunClick"
+        />
+    </right>
+</BorderPane>

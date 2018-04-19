@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="nathan.apes.tasksynth.ui.managewindow.ManageWindow"
+          prefHeight="290.0" prefWidth="600.0"
+          gridLinesVisible="true">
+
+            <columnConstraints>
+                <ColumnConstraints minWidth="600"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="20"/>
+            </rowConstraints>
+
+            <background>
+                <Background>
+                    <fills><BackgroundFill fill="white"/></fills>
+                </Background>
+            </background>
+
+            <Group>
+                <ImageView onMouseClicked="#onAddClick">
+                    <Image url="nathan/apes/tasksynth/resources/images/addIcon.jpg"/>
+                </ImageView>
+                <ImageView translateX="50" onMouseClicked="#onEditClick">
+                    <Image url="nathan/apes/tasksynth/resources/images/editIcon.jpg"/>
+                </ImageView>
+                <ImageView translateX="100" onMouseClicked="#onRemoveClick">
+                    <Image url="nathan/apes/tasksynth/resources/images/deleteIcon.jpg"/>
+                </ImageView>
+            </Group>
+
+            <CheckBox id="0" GridPane.rowIndex="1"/>
+            <CheckBox id="1" GridPane.rowIndex="2"/>
+            <CheckBox id="2" GridPane.rowIndex="3"/>
+            <CheckBox id="3" GridPane.rowIndex="4"/>
+            <CheckBox id="4" GridPane.rowIndex="5"/>
+            <CheckBox id="5" GridPane.rowIndex="6"/>
+            <CheckBox id="6" GridPane.rowIndex="7"/>
+            <CheckBox id="7" GridPane.rowIndex="8"/>
+            <CheckBox id="8" GridPane.rowIndex="9"/>
+            <CheckBox id="9" GridPane.rowIndex="10"/>
+            <CheckBox id="10" GridPane.rowIndex="11"/>
+            <CheckBox id="11" GridPane.rowIndex="12"/>
+            <CheckBox id="12" GridPane.rowIndex="13"/>
+            <CheckBox id="13" GridPane.rowIndex="14"/>
+            <CheckBox id="14" GridPane.rowIndex="15"/>
+            <CheckBox id="15" GridPane.rowIndex="16"/>
+</GridPane>

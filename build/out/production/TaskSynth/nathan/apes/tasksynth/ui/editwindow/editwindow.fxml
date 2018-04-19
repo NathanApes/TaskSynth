@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="nathan.apes.tasksynth.ui.editwindow.EditWindow"
+            prefHeight="160.0" prefWidth="400.0"
+            >
+
+    <columnConstraints>
+        <ColumnConstraints minWidth="400"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="40"/>
+    </rowConstraints>
+
+    <background>
+        <Background>
+            <fills><BackgroundFill fill="white"/></fills>
+        </Background>
+    </background>
+
+    <fx:define>
+        <Font name="Trebuchet MS" size="16" fx:id="font"/>
+    </fx:define>
+
+    <fx:define>
+        <Font name="Trebuchet MS" size="20" fx:id="fontBig"/>
+    </fx:define>
+
+    <TextField text="Replace the Time Variable?" font="$font" GridPane.rowIndex="4" id="taskWhen"/>
+
+    <CheckBox id="startup" translateX="120" translateY="10" GridPane.rowIndex="5"/>
+    <Text GridPane.rowIndex="5" translateX="160" translateY="10" text="Run on StartUp?" font="$font"/>
+
+    <Text
+            GridPane.rowIndex="7"
+            text="-----------------------------------------------"
+            font="$font"
+            translateX="60"
+            translateY="10"
+    />
+
+    <Group GridPane.rowIndex="9" translateX="130" translateY="20">
+        <Button text="Edit" onAction="#onSubmit"/>
+        <Button text="Cancel" translateX="80" onAction="#onCancel"/>
+    </Group>
+</GridPane>

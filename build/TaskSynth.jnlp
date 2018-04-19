@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TaskSynth.jnlp">
+  <information>
+    <title>TaskSynth</title>
+    <vendor>Unknown</vendor>
+    <description>Your task operator that runs tasks on startup, programmed times, or even just a simple command!</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TaskSynth.jar" size="231514" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="500" main-class="nathan.apes.tasksynth.Main"  name="TaskSynth" />
+  <update check="background"/>
+</jnlp>

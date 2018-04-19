@@ -1,0 +1,64 @@
+Time: Yep
+StartUp: false
+StartUp: false
+hidden: true
+Temp2
+Time: Edit2
+StartUp: false
+hidden: false
+Temp3
+Time: Edit3
+StartUp: false
+hidden: false
+Temp4
+Time: Edit4
+StartUp: false
+hidden: false
+Temp1
+Time: Edit1
+StartUp: false
+hidden: false
+Temp2
+Time: Edit2
+StartUp: false
+hidden: false
+Temp3
+Time: Edit3
+StartUp: false
+hidden: false
+Temp4
+Time: Edit4
+StartUp: false
+hidden: false
+Time: Edit1
+StartUp: false
+StartUp: false
+hidden: false
+Temp2
+Time: Edit2
+StartUp: false
+hidden: false
+Temp3
+Time: Edit3
+StartUp: false
+hidden: false
+Temp4
+Time: Edit4
+StartUp: false
+hidden: false
+Temp1
+Time: Edit1
+StartUp: false
+hidden: false
+Temp2
+Time: Edit2
+StartUp: false
+hidden: false
+Temp3
+Time: Edit3
+StartUp: false
+hidden: false
+Temp4
+Time: Edit4
+StartUp: false
+hidden: false
